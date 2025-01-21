@@ -32,11 +32,28 @@ project-root/
 ├── app.py         # flask backend code
 ├── imghdr.py
 
-**🛠️ Installation**
+🛠️ Installation
 🔑 Prerequisites
 Ensure you have the following installed on your system:
 
 🐍 Python 3.8+
 🌐 Flask
 🔑 A valid X API key for fetching Twitter comments.
+
+📥 Steps
+Clone the repository:
+git clone https://github.com/your-username/ai-social-comment-classifier.git
+cd ai-social-comment-classifier
+
+🚀 Usage
+🖊️ Step 1: Input Comments
+Provide a Tweet URL in the input box to fetch associated comments using the X API.
+Alternatively, manually input comments in the text box for classification.
+
+🤖 Step 2: Classification
+Click the "Analyze" button to classify comments.
+
+📊 Step 3: View Results
+Navigate to the results page to view the classified comments and their visualized insights.
+The top 10 comments, along with their classifications, are displayed prominently for easy interpretation.
  

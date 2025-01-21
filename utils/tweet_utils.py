@@ -1,7 +1,7 @@
 import re
 import tweepy
 
-BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAAT%2FyAEAAAAAHq%2B4KlyYQ6HnZy2fjk%2FQltT9hyg%3D495TgPFoRCTawnjwrp9ZMNXX5TFJ1eogkdXx4c6rIUGgTI01KD"
+BEARER_TOKEN = "**********************************************************"
 client = tweepy.Client(bearer_token=BEARER_TOKEN)
 
 def extract_tweet_id(url):

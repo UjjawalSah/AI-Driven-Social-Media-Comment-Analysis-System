@@ -22,7 +22,8 @@ The **AI-Driven Social Media Comment Classifier** is a web-based application des
 
 ---
 
-## 📂 File Structure and 
+## 📂 File Structure  
+```plaintext
  
 project-root/
 ├── models         # models pkl file

@@ -22,8 +22,8 @@ The **AI-Driven Social Media Comment Classifier** is a web-based application des
 
 ---
 
-## 📂 File Structure  
-```plaintext
+## 📂 File Structure and 
+ 
 project-root/
 ├── models         # models pkl file
 ├── statics        # Static files (CSS, JavaScript, Images)
@@ -42,7 +42,7 @@ Ensure you have the following installed on your system:
 
 📥 Steps
 Clone the repository:
-git clone https://github.com/your-username/ai-social-comment-classifier.git
+git clone https://github.com/UjjawalSah/AI-Driven-Social-Media-Comment-Analysis-System.git
 cd ai-social-comment-classifier
 
 🚀 Usage

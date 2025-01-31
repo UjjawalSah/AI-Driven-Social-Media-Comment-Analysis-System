@@ -119,7 +119,7 @@ if option == "Predict Comment":
             
             # Modify the "toxic" prediction by reducing it by 70%
             toxic_index = categories.index('toxic')
-            raw_prediction[0][toxic_index] = raw_prediction[0][toxic_index] * 0.30  # Reduce by 70%
+            raw_prediction[0][toxic_index] = raw_prediction[0][toxic_index] * 0.75  # Reduce by 70%
 
             # Create a dictionary of predicted categories with their probabilities
             percentages = {categories[i]: round(prob * 100, 2) for i, prob in enumerate(raw_prediction[0])}

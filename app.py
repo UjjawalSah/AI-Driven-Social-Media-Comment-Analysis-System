@@ -117,9 +117,10 @@ if option == "Predict Comment":
             raw_prediction = predict_cyberbullying([comment], tfidf_vectorizer, model)
             categories = ['toxic', 'obscene', 'insult', 'threat', 'identity hate']
             
-            # Display raw prediction values
-            st.write(f"Raw prediction values: {raw_prediction[0]}")
-            
+            # Modify the "toxic" prediction by reducing it by 70%
+            toxic_index = categories.index('toxic')
+            raw_prediction[0][toxic_index] = raw_prediction[0][toxic_index] * 0.30  # Reduce by 70%
+
             # Create a dictionary of predicted categories with their probabilities
             percentages = {categories[i]: round(prob * 100, 2) for i, prob in enumerate(raw_prediction[0])}
             

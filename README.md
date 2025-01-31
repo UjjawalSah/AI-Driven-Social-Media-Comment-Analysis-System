@@ -1,60 +1,110 @@
-# 🚀 AI-Driven Social Media Comment Classifier
+# AI-Powered Harmful Digital Content Detection 🤖🚫
 
-## 🌟 Overview  
-The **AI-Driven Social Media Comment Classifier** is a web-based application designed to analyze and classify comments from social media platforms, with a focus on Twitter. This system leverages an intelligent AI bot to classify comments based on user-defined criteria such as sentiment, relevance, or harmfulness. Users can input a tweet URL or manually input comments for analysis, and the results, including the top 10 comments, are displayed on a separate results page with clear visualizations.
+This repository contains an AI-powered tool designed to detect harmful and offensive comments or tweets. Using advanced Natural Language Processing (NLP) techniques and machine learning, the tool analyzes text for various categories such as toxicity, obscenity, insults, threats, and identity hate. This project aims to provide a safer digital space by identifying cyberbullying and harmful online content.
+
+## Features 🌟
+
+- **Real-time Comment Analysis**: Predict harmful content in user comments with a simple input.
+- **Tweet Analysis**: Analyze tweets and detect harmful content in their replies.
+- **Visualized Results**: Display prediction results in a user-friendly table format and generate bar charts for visual feedback.
+- **Customizable Categories**: Detect various types of harmful content, including toxicity, obscenity, insults, threats, and identity hate.
+
+## Demo 🎬
+
+You can view the tool in action on the [Streamlit App](https://ai-powered-harmful-digital-content-detection.streamlit.app/).
+
+## Technologies Used 💻
+
+- **Python** 🐍
+- **Streamlit** 📊
+- **Scikit-learn** 🧠
+- **Matplotlib** 📈
+- **Natural Language Processing (NLP)** 💬
+- **TF-IDF Vectorizer** 🔍
+
+## Installation 🔧
+
+### Prerequisites
+
+To run the project locally, ensure you have Python 3.6+ installed.
+
+### Clone the Repository
+
+```
+git clone https://github.com/UjjawalSah/AI-Powered-Harmful-Digital-Content-Detection.git
+cd AI-Powered-Harmful-Digital-Content-Detection
+```
+
+## Installation 🔧
+
+### Install Dependencies
+
+Create a virtual environment and install the required dependencies.
+
+```
+pip install -r requirements.txt
+```
+#Run the Application
+Start the Streamlit application by running the following command:
+```
+streamlit run app.py
+```
+## Usage 🛠️
+
+### Predict a Comment
+- Input a comment into the provided text box.
+- Click **Predict** to analyze the comment for harmful content.
+- The app will display the prediction results, including percentages for different categories such as toxicity, obscenity, and more.
+
+### Predict Tweets
+- Input a valid Tweet URL.
+- Click **Analyze Tweet** to fetch comments from the tweet.
+- The app will display predictions for the first 10 comments.
 
 ---
 
-## ✨ Features  
-- **📝 Input Options**:  
-  - 📎 Tweet URL input for fetching comments using the `X API`.  
-  - 🖊️ Manual input box for user-provided comments.  
+## How It Works 🧠
 
-- **🤖 AI Classification**:  
-  - Utilizes an intelligent AI bot to process and classify comments effectively.  
+The tool uses a pre-trained machine learning model that classifies text into five categories:
 
-- **📊 Results Visualization**:  
-  - Displays classification results in a detailed and visually appealing format.  
-  - Lists the top 10 classified comments along with their scores or categories.  
+- **Toxicity**: Harsh or abusive language.
+- **Obscenity**: Inappropriate or offensive content.
+- **Insults**: Disrespectful language targeted at individuals.
+- **Threats**: Content that threatens harm to others.
+- **Identity Hate**: Hate speech directed at specific groups based on identity.
 
-- **💻 User-Friendly Interface**:  
-  - Simple and intuitive UI for seamless interaction.  
+It first preprocesses the text using TF-IDF vectorization and then feeds it into a machine learning model for classification. The results are presented as probabilities for each category.
 
 ---
 
-## 📂 File Structure  
-```plaintext
- 
-project-root/
-├── models         # models pkl file
-├── statics        # Static files (CSS, JavaScript, Images)
-├── templates      # HTML templates for web pages
-├── utils          # x or twitter api code and comments cleaning
-├── app.py         # flask backend code
-├── imghdr.py
+## Contributing 🤝
 
-🛠️ Installation
-🔑 Prerequisites
-Ensure you have the following installed on your system:
+We welcome contributions to improve the tool. To contribute, please follow these steps:
 
-🐍 Python 3.8+
-🌐 Flask
-🔑 A valid X API key for fetching Twitter comments.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push the branch (`git push origin feature-name`).
+5. Create a new Pull Request.
 
-📥 Steps
-Clone the repository:
-git clone https://github.com/UjjawalSah/AI-Driven-Social-Media-Comment-Analysis-System.git
-cd ai-social-comment-classifier
+---
 
-🚀 Usage
-🖊️ Step 1: Input Comments
-Provide a Tweet URL in the input box to fetch associated comments using the X API.
-Alternatively, manually input comments in the text box for classification.
+## License 📄
 
-🤖 Step 2: Classification
-Click the "Analyze" button to classify comments.
+This project is **free to use** and is developed by **Ujjawal Kumar**.
 
-📊 Step 3: View Results
-Navigate to the results page to view the classified comments and their visualized insights.
-The top 10 comments, along with their classifications, are displayed prominently for easy interpretation.
- 
+---
+
+## About the Developer 👨‍💻
+
+This tool was developed by **Ujjawal Kumar**. You can find the source code and contribute on GitHub.
+
+- [GitHub - Ujjawal Kumar](https://github.com/UjjawalSah)
+
+---
+
+## Acknowledgements 🙏
+
+- **[Streamlit](https://streamlit.io/)** for providing an easy-to-use framework for building interactive apps.
+- **[Scikit-learn](https://scikit-learn.org/)** for providing powerful machine learning tools.
+- **[Matplotlib](https://matplotlib.org/)** for visualizing the prediction results.
